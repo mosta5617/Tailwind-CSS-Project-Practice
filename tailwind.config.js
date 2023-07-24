@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "githubNav" : "#dfdfdf",
+        "githubName" : "#161B22",
+      }
+    },
   },
   plugins: [],
 }

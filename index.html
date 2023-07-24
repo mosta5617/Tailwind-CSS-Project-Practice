@@ -4,10 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/output.css" rel="stylesheet">
+  <meta>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-gray-200">
-  <h1 class="text-3xl text-red-700">
-    Hello world! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus aliquam rerum? Unde et illum optio nemo quasi rerum officiis itaque dolore mollitia placeat rem maiores, libero totam odit porro.
-  </h1>
+<body class="">
+
+  <!-- navbar-->
+  <div class="bg-gray-200 pb-1">
+    <div class="flex">
+    <!-- left link -->
+    <div class="flex items-center w-4/5">
+      <div>
+        <img class="w-8 h-8 rounded-full" src="./img/logo.png" alt="">
+      </div>
+      <div>
+        <input class="ml-4 w-96 bg-gray-400 border border-gray-700 rounded text-sm p-1 outline-none text-gray-200" type="text" placeholder="Search or jump">
+      </div>
+      <div class="text-sm text-gray-500 ml-4 flex items-center space-x-2">
+        <a class="hover:text-gray-800" href="">Pull Request</a>
+        <a class="hover:text-gray-800" href="">Issues</a>
+        <a class="hover:text-gray-800" href="">Marketplace</a>
+        <a class="hover:text-gray-800" href="">Explore</a>
+      </div>
+    </div>
+
+    <!-- right link -->
+    <div>
+      <div class="flex justify-end items-center text-right space-x-2">
+        <a  href="">
+          <i class="fa-solid fa-bell text-black hover:text-gray-500"></i>
+        </a>
+        <a href="">
+          <i class="fa-solid fa-plus text-black hover:text-gray-500"></i>
+        </a>
+        <a href="">
+        <img class="w-6 h-6 rounded-full hover:text-gray-500" src="./img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+
+
+    </div>
+  </div>
+
 </body>
 </html>
