@@ -27,12 +27,12 @@
     <!-- left link -->
     <div class="flex items-center w-4/5">
       <div>
-        <img class="w-8 h-8 rounded-full" src="./img/logo.png" alt="">
+        <img class="w-8 h-8 rounded-full ml-2" src="./img/logo.png" alt="">
       </div>
-      <div>
-        <input class="ml-4 w-96 bg-gray-400 border border-gray-700 rounded text-sm p-1 outline-none text-gray-200" type="text" placeholder="Search or jump">
+      <div class="hidden lg:inline">
+        <input class="ml-4 w-96 bg-gray-200 border border-gray-700 rounded-full text-sm p-1 outline-none text-gray-500" type="text" placeholder="Search or jump">
       </div>
-      <div class="text-sm text-gray-500 ml-4 flex items-center space-x-2">
+      <div class="text-sm text-gray-500 ml-4  items-center space-x-5 hidden md:inline">
         <a class="hover:text-gray-800" href="">Pull Request</a>
         <a class="hover:text-gray-800" href="">Issues</a>
         <a class="hover:text-gray-800" href="">Marketplace</a>
@@ -41,23 +41,66 @@
     </div>
 
     <!-- right link -->
-    <div>
-      <div class="flex justify-end items-center text-right space-x-2">
+    <div class=" text-right flex justify-end items-center">
+      <div class=" space-x-4 text-sm hidden md:flex ">
         <a  href="">
-          <i class="fa-solid fa-bell text-black hover:text-gray-500"></i>
+          <i class="fa-solid fa-bell hover:text-black text-gray-500"></i>
         </a>
         <a href="">
-          <i class="fa-solid fa-plus text-black hover:text-gray-500"></i>
+          <i class="fa-solid fa-plus hover:text-black text-gray-500"></i>
         </a>
         <a href="">
-        <img class="w-6 h-6 rounded-full hover:text-gray-500" src="./img/logo.png" alt="">
+        <img class="w-6 h-6 rounded-full hover:text-gray-500" src="./img/avatar.png" alt="">
+        </a>
+      </div>
+      <button class="md:hidden mobile-icon items-center justify-end">
+        <i class="fa-solid fa-list hover:text-black text-gray-500"></i>
+      </button>
+    </div>
+    </div>
+    
+    <ul class="md:hidden mobile-menu ml-2 space-y-2">
+      <li><a class="text-gray-400 hover:text-gray-900 text-sm font-medium" href="">Pull Request</a></li>
+      <li><a class="text-gray-400 hover:text-gray-900 text-sm font-medium" href="">Issues</a></li>
+      <li><a class="text-gray-400 hover:text-gray-900 text-sm font-medium" href="">Marketplace</a></li>
+      <li><a class="text-gray-400 hover:text-gray-900 text-sm font-medium" href="">Explore</a></li>
+      <li>  <input class="ml-4 w-96 bg-gray-200 border border-gray-500 rounded text-sm p-1 outline-none text-gray-500" type="text" placeholder="Search or jump"></li>
+    </ul>
+
+  </div>
+<!-- main section -->
+  <div class="mx-8 mt-8">
+    <div class="w-1/4">
+      <!-- profile -->
+      <div>
+        <img class="w-40 h-40 rounded-full" src="./img/avatar.png" alt="">
+      </div>
+
+      <div>
+        <div class="text-3xl text-gray-400 text-medium pb-1">Mostafijur Rahman</div>
+        <button class="border border-gray-400 hover:text-gray-700 py-1 rounded w-4/5 hover:border-gray-600 hover:bg-gray-400">Follow</button>
+      </div>
+      <div class="mt-4">
+        <p class="text-gray-400 text-sm mb-4 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In blanditiis ducimus harum, tempora animi repellendusa dipisicing elit. In blanditiis ducimus harum, tempora animi repellendus!</p>
+        <a class="text-gray-400 text-sm" href="">
+          <i class=" fa fa-users"> 100 </i><span> Follower </span>
+        </a>
+        <a class="text-gray-400 text-sm" href="">
+          23 <span> Following</span>
+        </a>
+        <a class="text-gray-400 text-sm" href="">
+          <i class=" fa fa-star"> 100 </i>
         </a>
       </div>
     </div>
-
-
-    </div>
   </div>
 
+  <script type="text/javascript">
+const menu = document.querySelector('.mobile-menu');
+const icon = document.querySelector('.mobile-icon');
+icon.addEventListener('click', () =>{
+  menu.classList.toggle('hidden');
+})
+  </script>
 </body>
 </html>
