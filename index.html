@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="./output/output.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="h-screen  flex items-center justify-center bg-teal-300">
+<body class="h-screen  flex items-center justify-center bg-teal-300 dark:bg-slate-900">
   
-    <div class="max-w-sm mx-auto p-12 bg-white rounded-xl shadow-lg space-y-4 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6">
-        
-        <img src="./images/photo.jpg" alt="Fruits Jar" class="h-24 mx-auto rounded-full ring-4 ring-red-300 sm:flex-shrink-0">
+    <div class="max-w-sm mx-auto p-12 bg-white rounded-xl shadow-lg space-y-4 sm:flex sm:items-center sm:py-4 sm:space-y-0 sm:space-x-6 dark:bg-gray-400">
 
+        
+        <img src="./images/photo.jpg" alt="Fruits Jar" class="h-24 mx-auto rounded-full ring-4 ring-red-300 sm:flex-shrink-0 transform hover:scale-105 duration-500">
+        
         <div class="text-center space-y-2 sm:text-left">
+            <img src="./images/sun.png" alt="" class="sun cursor-pointer h-8 mx-auto">
+            <img src="./images/moon.png" alt="" class="moon cursor-pointer h-8 mx-auto">
             <div>
-                <p class="text-lg text-black font-bold">Fruits Jar</p>
+                <p class="text-lg text-black font-bold dark:text-white">Fruits Jar</p>
                 <p class="text-gray-500 font-medium">Fruits Jar</p>
             </div>
-            <button class="px-4 py-1 border border-cyan-500 text-sm text-green-800 font-medium bg-slate-500 rounded-xl">Read more</button>
+            <button class="px-4 py-1 border border-cyan-500 text-sm text-green-800 font-medium bg-slate-500 hover:bg-green-400 rounded-xl hover:text-white hover:border-transparent focus:outline-none hover:outline-offset-2">Read more</button>
         </div>
     </div>
 
+
+    <script src="/app.js"></script>
 </body>
 </html>
