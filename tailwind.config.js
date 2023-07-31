@@ -3,7 +3,13 @@ module.exports = {
   content: ["./*html"],
   darkMode: "class", // class, media
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'borel' :['Borel'], 
+        'roboto' :['Roboto'], 
+        'openSans' :['Open+Sans'], 
+      }
+    },
   },
   plugins: [],
 }
