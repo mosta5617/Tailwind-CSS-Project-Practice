@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Project</title>
+    <link rel="stylesheet" href="./output/tailwind.css">
+
+    <!-- Font Awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Borel&family=Open+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="flex justify-center items-center h-screen">
+    <div class="relative">
+      <input type="text" class="px-4 py-2 border border-gray-300 rounded-md w-48 transition-all duration-300 focus:w-64" 
+             onfocus="expandForm(event)" onblur="collapseForm(event)">
+      <div class="absolute left-0 top-0 bg-white border border-gray-300 p-2 w-48 h-10 transition-all duration-300 focus:w-64 
+                  expanded-input invisible">
+        <!-- Any additional form elements or content can be added here -->
+      </div>
+    </div>
+  
+    <script>
+      function expandForm(event) {
+        const formContainer = event.target.nextElementSibling;
+        formContainer.classList.remove('invisible');
+        formContainer.classList.add('visible', 'expanded-input');
+      }
+  
+      function collapseForm(event) {
+        const formContainer = event.target.nextElementSibling;
+        formContainer.classList.remove('visible', 'expanded-input');
+        formContainer.classList.add('invisible');
+      }
+    </script>
+      
+
+
+
+    
+    <script src="app.js"> </script>
+</body>
+</html>
