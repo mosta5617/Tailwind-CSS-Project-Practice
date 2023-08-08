@@ -40,3 +40,12 @@ moonIcon.addEventListener('click',() => {
 });
 
 themeCheck();
+
+
+
+
+
+// mobile menu view
+
+
+ 
